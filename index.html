@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<head>
+    <title>Tapsiriq</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style-type: none;
+        }
+        body{
+            background-color: rgb(0, 0, 41);
+        }
+        .center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            position: relative;
+            margin-top: 4vh;
+            height: 90vh;
+            width: 50vh;
+            background-color: rgb(0, 0, 27);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 15px 20px 10px rgba(0, 0, 0, 0.5);
+        }
+        #icon{
+            position: absolute;
+            text-align: center;
+            width: 10%;
+            top: 10px;
+            left: 10px;
+            background-color: orange;
+            border-radius: 2px;
+            text-transform: uppercase;
+        }
+        .picture_outline{
+            margin-top: 25px;
+            width: 110px;
+            height: 110px;
+            border: 1px solid lightseagreen;
+            border-radius: 50%;
+        }
+        .picture{
+            border-radius: 50%;
+        }
+        img{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        }
+        .info{
+            padding-top: 10%;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        .links{
+            margin: 20% 0%;
+            gap: 16px;
+        }
+        .buttons{
+            width: 100px;
+            height: 40px;
+            border: 1px solid lightseagreen;
+            border-radius: 6px;
+        }
+        .follows{
+            background-color: lightseagreen;
+        }
+        .skills{
+            position: absolute;
+            bottom: 0;
+            background-color: #00000f;
+            height: 18%;
+            width: 100%;
+            padding: 15px;
+        }
+        ul{
+            margin-top: 10px; 
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+        li {
+            border: 1px solid lightseagreen;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="center">
+            <div class="container">
+                <div class="profile center">
+                    <span id="icon">Pro</span>
+                    <div class="picture_outline center">
+                        <div class="picture center">
+                            <img src="https://images.unsplash.com/photo-1608848461950-0fe51dfc41cb?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D" alt="Profile picture">
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <p>Ricky park</p>
+                    <p>New york</p>
+                    <p>User interface designer and front-end developer</p>
+                </div> 
+                <div class="links center">
+                    <div class="buttons center"><a>Message</a></div>
+                    <div class="buttons follows center"><a>Following</a></div>
+                </div>
+                <div class="skills">
+                    <label>SKILLS</label>
+                    <ul>
+                        <li>UI/UX</li>
+                        <li>Front End Deeveloper</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Node</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
